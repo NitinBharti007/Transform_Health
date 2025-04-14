@@ -29,7 +29,6 @@ const NewsEventCard = ({ image, title, description, linkText, link }) => {
 const NewsEvents = () => {
   return (
     <div className="px-4 lg:px-8 bg-amber-50">
-      {/* Header Section */}
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 p-4 lg:p-8">
         <h1 className="text-3xl sm:text-5xl font-bold text-[#2c4a6b]">
           NEWS & EVENTS
@@ -40,10 +39,7 @@ const NewsEvents = () => {
           className="hidden lg:block max-w-[150px]"
         />
       </div>
-
-      {/* Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 lg:p-8">
-        {/* Commentaries & Opinions Section */}
         <div>
           <h2 className="text-2xl sm:text-4xl font-bold text-[#2c4a6b] mb-4">
             Commentaries & Opinions
@@ -65,8 +61,6 @@ const NewsEvents = () => {
             />
           </div>
         </div>
-
-        {/* Campaigns Section */}
         <div>
           <h2 className="text-2xl sm:text-4xl font-bold text-[#2c4a6b] mb-4">
             Campaigns
@@ -89,47 +83,40 @@ const NewsEvents = () => {
           </div>
         </div>
       </div>
-
-      {/* In the News & Events Section */}
       <div className="flex flex-col md:flex-row justify-center items-stretch min-h-[500px] gap-6 p-4 lg:p-8">
-        {/* In the News Section */}
-        {/* In the News Section */}
-<div className="bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl p-6 w-full md:w-1/2 shadow-lg flex flex-col">
-  <h2 className="text-white text-3xl font-extrabold mb-4 flex items-center gap-2">
-    <i className="fas fa-newspaper text-white"></i> In the News
-  </h2>
-  <div className="overflow-y-auto h-[420px] pr-2 space-y-4 custom-scrollbar">
-    {Array.from({ length: 10 }).map((_, index) => (
-      <div
-        key={index}
-        className="bg-white rounded-xl p-4 shadow hover:shadow-md transition duration-300 flex flex-col sm:flex-row gap-4"
-      >
-        <img
-          src={`https://placehold.co/300x180?text=News+${index + 1}`}
-          alt={`News ${index + 1}`}
-          className="w-full sm:w-40 h-36 object-cover rounded-lg"
-        />
-        <div className="flex-1">
-          <h3 className="text-xl font-bold text-[#2c4a6b]">
-            News Headline {index + 1}
-          </h3>
-          <p className="text-gray-700 text-sm mt-1">
-            Short description for the news item {index + 1}...
-          </p>
-          <a
-            href="#"
-            className="text-orange-500 font-semibold mt-2 inline-block hover:underline"
-          >
-            Learn more
-          </a>
+        <div className="bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl p-6 w-full md:w-1/2 shadow-lg flex flex-col">
+          <h2 className="text-white text-3xl font-extrabold mb-4 flex items-center gap-2">
+            <i className="fas fa-newspaper text-white"></i> In the News
+          </h2>
+          <div className="overflow-y-auto h-[420px] pr-2 space-y-4 custom-scrollbar">
+            {Array.from({ length: 10 }).map((_, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-4 shadow hover:shadow-md transition duration-300 flex flex-col sm:flex-row gap-4"
+              >
+                <img
+                  src={`https://placehold.co/300x180?text=News+${index + 1}`}
+                  alt={`News ${index + 1}`}
+                  className="w-full sm:w-40 h-36 object-cover rounded-lg"
+                />
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-[#2c4a6b]">
+                    News Headline {index + 1}
+                  </h3>
+                  <p className="text-gray-700 text-sm mt-1">
+                    Short description for the news item {index + 1}...
+                  </p>
+                  <a
+                    href="#"
+                    className="text-orange-500 font-semibold mt-2 inline-block hover:underline"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    ))}
-  </div>
-</div>
-
-
-        {/* Events Section */}
         <div className="bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl p-6 w-full md:w-1/2 shadow-lg flex flex-col justify-between">
           <h2 className="text-white text-3xl font-extrabold mb-4 flex items-center gap-2">
             <i className="fas fa-calendar-alt text-white"></i> Events

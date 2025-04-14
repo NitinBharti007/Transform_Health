@@ -9,9 +9,7 @@ const CommunityAction = () => {
       <h1 className="text-4xl md:text-5xl font-bold text-center text-[#2c4a6b] mb-10 w-full max-w-full">
         GLOBAL COMMUNITY LOCAL ACTION
       </h1>
-
       <div className="space-y-12 px-4 md:px-16 lg:px-40">
-        {/* Multi-sectoral Collaboration */}
         <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8 transition-transform duration-500 transform hover:scale-105">
           <img
             src={hands}
@@ -29,8 +27,6 @@ const CommunityAction = () => {
             </p>
           </div>
         </div>
-
-        {/* Six National Coalitions */}
         <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8 transition-transform duration-500 transform hover:scale-105">
           <img
             src={icon}
@@ -50,8 +46,6 @@ const CommunityAction = () => {
             </p>
           </div>
         </div>
-
-        {/* Influencing Regional Agendas */}
         <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8 transition-transform duration-500 transform hover:scale-105">
           <img
             src={icon2}
@@ -68,8 +62,6 @@ const CommunityAction = () => {
             </p>
           </div>
         </div>
-
-        {/* Call to Action */}
         <div className="mt-8 text-center">
           <a
             href="#"

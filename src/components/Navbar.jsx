@@ -7,7 +7,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  // Handle navbar background on scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -16,7 +15,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
@@ -33,7 +31,6 @@ const Navbar = () => {
     >
       <div className="max-w-[1400px] mx-auto px-4">
         <div className="flex justify-between items-center h-22">
-          {/* Logo */}
           <Link to="/" className="flex-shrink-0 z-50">
             <img
               src={logo}
@@ -41,8 +38,6 @@ const Navbar = () => {
               className="h-10 lg:h-15 w-auto transition-transform duration-300 hover:scale-105"
             />
           </Link>
-
-          {/* Mobile menu button */}
           <div className="lg:hidden z-50">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -69,8 +64,6 @@ const Navbar = () => {
               </div>
             </button>
           </div>
-
-          {/* Desktop menu */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <NavLink to="/" active={isActive("/")}>
               HOME
@@ -96,8 +89,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile menu overlay */}
       <div
         className={`fixed inset-0 bg-white/95 backdrop-blur-sm transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
@@ -131,7 +122,6 @@ const Navbar = () => {
   );
 };
 
-// Desktop NavLink component
 const NavLink = ({ to, children, active }) => (
   <Link
     to={to}
@@ -148,7 +138,6 @@ const NavLink = ({ to, children, active }) => (
   </Link>
 );
 
-// Mobile NavLink component
 const MobileNavLink = ({ to, children, active }) => (
   <Link
     to={to}

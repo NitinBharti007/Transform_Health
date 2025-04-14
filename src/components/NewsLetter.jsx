@@ -5,7 +5,8 @@ const NewsLetter = () => {
     <section className="px-6 py-10 bg-orange-400 text-white text-center">
       <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
         <h2 className="text-lg sm:text-xl font-semibold uppercase">
-          Subscribe to Transform Health’s Newsletter: <span className="italic">The Digest</span>
+          Subscribe to Transform Health’s Newsletter:{" "}
+          <span className="italic">The Digest</span>
         </h2>
         <a
           href="#"
